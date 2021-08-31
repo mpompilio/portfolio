@@ -16,6 +16,7 @@ body {
     color: var(--secondary-color);
 }
 
+/* Header Section */
 header {
     padding: 20px 35px;
     background-color: var(--primary-color);
@@ -23,6 +24,8 @@ header {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -65,10 +68,20 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* Sections */
 section {
     padding: 20px 60px 60px 60px;
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
+section h2 {
+    padding: 0 100px 0 0;
+    font-size: 4.00vw;
+
+}
+
+/* Hero Section  */
 .hero {
     background-image: url(https://cdn.wallpapersafari.com/69/92/0omqsH.jpg);
     padding: 100px;
@@ -82,18 +95,22 @@ section {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* About Me Section */
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+}
+
+.flex-row {
+    display: flex;
 }
 
 .about-me-content {
     display: flex;
     align-items: center;
     background: var(--fourth-color);
-    padding: 15px 25px 15px 25px;
+    padding: 25px;
 }
 
 .about-me-content p {
@@ -102,15 +119,114 @@ section {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.section-header {
-    padding: 0 100px 0 0;
-    font-size: 28px;
-
-}
-
 .headshot {
     height: 25.75vw;
     width: 25.75vw;
+}
 
+/* Work Section */
 
+.work {}
+
+.work-header {
+    display: flex;
+}
+
+.main-work {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.main-work img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--secondary-color);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+}
+
+.main-work img:hover {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--primary-color);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+}
+
+.image-tag {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: #f2f2f2;
+    font-size: 1.25vw;
+    background-color: var(--fourth-color);
+    height: 6.00vw;
+    width: 13.00vw;
+    padding: 10px;
+    text-align: center;
+    text-emphasis: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-tag:hover {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: #f2f2f2;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    padding: 35px 60px 35px 60px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-tag a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.secondary-work {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.worklist-img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--secondary-color);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+    padding-left: 15px;
+
+}
+
+.secondary-work img:hover {
+    border: 3px solid var(--primary-color);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+}
+
+.secondary-work li {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+}
+
+.fakeproject1 {
+    width: 100%;
+    height: 88%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--secondary-color);
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+    padding-left: 15px;
 }
