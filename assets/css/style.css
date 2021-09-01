@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -142,8 +143,8 @@ section h2 {
 }
 
 .main-work img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 3px solid var(--secondary-color);
     filter: blur(8px);
@@ -151,8 +152,8 @@ section h2 {
 }
 
 .main-work img:hover {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 3px solid var(--primary-color);
     filter: blur(8px);
@@ -161,8 +162,7 @@ section h2 {
 
 .image-tag {
     position: absolute;
-    bottom: 60px;
-    left: 40px;
+    margin: 15em 40em 15em 0em;
     color: #f2f2f2;
     font-size: 1.25vw;
     background-color: var(--fourth-color);
@@ -177,12 +177,9 @@ section h2 {
 
 .image-tag:hover {
     position: absolute;
-    bottom: 60px;
-    left: 40px;
+    margin: 15em 40em 15em 0em;
     color: #f2f2f2;
-    font-size: 20px;
     background-color: var(--primary-color);
-    padding: 35px 60px 35px 60px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -197,6 +194,10 @@ section h2 {
     justify-content: center;
     color: white;
     padding-bottom: 15px;
+}
+
+.secondary-work div {
+    color: var(--secondary-color);
 }
 
 .worklist-img {
@@ -229,4 +230,36 @@ section h2 {
     filter: blur(8px);
     -webkit-filter: blur(3px);
     padding-left: 15px;
+}
+
+.second-image-tag {
+    position: absolute;
+    margin: 6em 10em 6em 2em;
+    color: #f2f2f2;
+    font-size: 1.25vw;
+    background-color: var(--fourth-color);
+    height: 6.00vw;
+    width: 13.00vw;
+    padding: 10px;
+    text-align: center;
+    text-emphasis: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.second-image-tag:hover {
+    position: absolute;
+    margin: 6em 10em 6em 2em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    text-emphasis: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.second-image-tag h3,
+.second-image-tag p {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
