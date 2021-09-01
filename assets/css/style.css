@@ -263,3 +263,42 @@ section h2 {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+/* Contact Me Section */
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me-content {
+    display: flex;
+    background: var(--fourth-color);
+    padding: 25px;
+}
+
+.contact-me-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.contact-me-content ul li {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.contact-me-content ul li a {
+    font-size: 1.75vw;
+    border-bottom: 1px solid var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.contact-me-content ul li a:hover {
+
+    color: var(--third-color);
+    text-shadow: none;
+}
